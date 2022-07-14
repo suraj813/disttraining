@@ -88,7 +88,7 @@ Now lets download the source code there:
 ```bash
 mkdir /shared/code
 cd /shared/code/
-git clone https://github.com/aivanou/disttraining.git 
+git clone https://github.com/suraj813/disttraining.git 
 cd disttraining
 # NOTE: Important to do, due to https://github.com/pytorch/pytorch/pull/69904 bug
 python3 -m pip install setuptools==59.5.0
@@ -105,7 +105,7 @@ aws s3 cp s3://#YOUR_BUCKET_NAME/charnn/data/input.txt ./
 Now we can run our training job via the following cmd:
 
 ```bash
-cd /shared/code/disttrain
+cd /shared/code/disttraining
 sbatch ./slurm/slurm_sbatch_run.sh
 ```
 
