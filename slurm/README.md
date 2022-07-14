@@ -105,6 +105,7 @@ aws s3 cp s3://#YOUR_BUCKET_NAME/charnn/data/input.txt ./
 Now we can run our training job via the following cmd:
 
 ```bash
+mkdir /shared/model
 cd /shared/code/disttraining
 sbatch ./slurm/slurm_sbatch_run.sh
 ```
